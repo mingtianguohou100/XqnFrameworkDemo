@@ -1,4 +1,4 @@
-package com.mwa.xqnframeworkdemo.mvp.model.api;
+package com.mwa.xqnframeworkdemo.model;
 
 /*
  * 这里可以实现全局网络请求

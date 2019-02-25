@@ -10,15 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mwa.xqnframeworkdemo.mvp.ui.dialog.LoadingDialog;
+import com.mwa.xqnframeworkdemo.ui.dialog.LoadingDialog;
 
 
-public abstract class BaseFragment<P extends IPresenter> extends Fragment implements IView {
+public abstract class BaseFragment extends Fragment {
     protected Context mContext;
     protected Activity mActivity;
     protected View mView;
     private LoadingDialog mLoadingDialog;
-    protected P mPresenter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -61,14 +60,5 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
         if (mLoadingDialog != null && mLoadingDialog.isShowing()) {
             mLoadingDialog.dismiss();
         }
-    }
-
-    @Override
-    public void onDestroy() {
-        if (mPresenter != null) {
-            mPresenter.onDestroy();
-        }
-        mPresenter = null;
-        super.onDestroy();
     }
 }

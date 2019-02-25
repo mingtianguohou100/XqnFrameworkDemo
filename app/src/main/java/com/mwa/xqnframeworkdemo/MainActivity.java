@@ -8,8 +8,8 @@ import android.widget.RadioGroup;
 
 import com.mwa.xqnframeworkdemo.base.BaseActivity;
 import com.mwa.xqnframeworkdemo.base.BaseFragment;
-import com.mwa.xqnframeworkdemo.mvp.ui.fragment.HomeFragment;
-import com.mwa.xqnframeworkdemo.mvp.ui.fragment.PersonalCenterFragment;
+import com.mwa.xqnframeworkdemo.ui.fragment.HomeFragment;
+import com.mwa.xqnframeworkdemo.ui.fragment.PersonalCenterFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,13 +89,4 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         }
     }
 
-    @Override
-    public void showLoading() {
-
-    }
-
-    @Override
-    public void hideLoading() {
-
-    }
 }

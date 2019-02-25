@@ -1,4 +1,4 @@
-package com.mwa.xqnframeworkdemo.mvp.model.api;
+package com.mwa.xqnframeworkdemo.model;
 
 public interface Callback {
    void onSuccess(String json);

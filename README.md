@@ -1,2 +1,2 @@
-# XqnFrameworkDemo-MVP
+# XqnFrameworkDemo-MVC
 
