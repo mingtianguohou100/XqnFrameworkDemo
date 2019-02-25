@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <import type="android.view.View"/>
         <variable
             name="homeViewModel"
             type="com.mwa.xqnframeworkdemo.viewmodel.HomeViewHolder" />

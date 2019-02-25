@@ -21,14 +21,13 @@ import com.mwa.xqnframeworkdemo.viewmodel.HomeViewHolder;
 
 
 public class HomeFragment extends Fragment {
-    private HomeViewHolder mHomeViewHolder;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         HomeLayoutBinding inflate = DataBindingUtil.inflate(inflater, R.layout.home_layout, container, false);
-        mHomeViewHolder = new HomeViewHolder(getActivity());
-        inflate.setViewModel(mHomeViewHolder);
+        HomeViewHolder  mHomeViewHolder = new HomeViewHolder(getActivity());
+        inflate.setHomeViewModel(mHomeViewHolder);
         return inflate.getRoot();
     }
 

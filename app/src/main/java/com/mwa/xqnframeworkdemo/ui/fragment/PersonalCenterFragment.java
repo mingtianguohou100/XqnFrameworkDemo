@@ -14,14 +14,13 @@ import com.mwa.xqnframeworkdemo.viewmodel.PersonalCenterViewHolder;
 
 
 public class PersonalCenterFragment extends Fragment {
-    private PersonalCenterViewHolder mHomeViewHolder;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        PersonalCenterLayoutBinding inflate = DataBindingUtil.inflate(inflater, R.layout.home_layout, container, false);
-        mHomeViewHolder = new PersonalCenterViewHolder(getActivity());
-        inflate.setViewModel(mHomeViewHolder);
+        PersonalCenterLayoutBinding inflate = DataBindingUtil.inflate(inflater, R.layout.personal_center_layout, container, false);
+        PersonalCenterViewHolder mHomeViewHolder = new PersonalCenterViewHolder(getActivity());
+        inflate.setPcViewModel(mHomeViewHolder);
         return inflate.getRoot();
     }
 
