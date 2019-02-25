@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
 
 import com.mwa.xqnframeworkdemo.base.BaseActivity;
-import com.mwa.xqnframeworkdemo.base.BaseFragment;
 import com.mwa.xqnframeworkdemo.ui.fragment.HomeFragment;
 import com.mwa.xqnframeworkdemo.ui.fragment.PersonalCenterFragment;
 
@@ -16,7 +15,7 @@ import java.util.List;
 
 public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
     private RadioGroup mRg_bottom;
-    private List<BaseFragment> mFragmentArr;
+    private List<Fragment> mFragmentArr;
     private int mFragmentPosition;
     private FragmentTransaction fragmentTransaction;
     protected Fragment last;
